@@ -66,9 +66,6 @@ defmodule FlyWeb.AppLive.Index do
   end
   @impl true
   def handle_info(%{event: "new_monitoring", payload: data}, socket) do
-    #send_update(
-    #  SurveyResultsLive,
-    #  id: socket.assigns.survey_results_component_id)
     socket = socket |> assign(:apps, data)
     {:noreply, socket}
   end

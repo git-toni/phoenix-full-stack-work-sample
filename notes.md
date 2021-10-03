@@ -41,4 +41,8 @@
 ## Questions
 - Why is there a query field inside `app.ipAddress(addres: String!)` ? I'd expect only the `ipAddresses` that returns a List/Connection.
 - Why is `app.appUrl` pointing to the public IP?
-- Obfuscate the GraphQL schema unless it's a feature
+- Brainstorm the possibility of disabling public GraphQL instrospection as a security enhancement ([Article](https://www.apollographql.com/blog/graphql/security/why-you-should-disable-graphql-introspection-in-production/) on the topic).
+- With regard to `How you'd determine if X feature is successful?` requested at the main README:
+  - It really depends on the definition of successful.
+  - If it refers to "cover user needs", I'd refer to the user feature requests & feedback surveys. But that's more a KPI & planning topic.
+  - If it refers to whether it's actually working correctly, then definitely make sure the feature is properly E2E tested.
